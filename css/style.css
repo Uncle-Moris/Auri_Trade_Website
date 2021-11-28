@@ -1,9 +1,8 @@
-
 .header {
   top: 0;
   padding: 65px;
   text-align: center;
-  background: #1abc9c;
+  background: #001e44;
   color: white;
   font-size: 30px;
 }
@@ -12,7 +11,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #001e44;
   color: white;
   text-align: center;
 }
