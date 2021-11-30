@@ -1,20 +1,24 @@
-.header {
-  top: 0;
-  padding: 65px;
-  text-align: center;
-  background: #001e44;
-  color: white;
-  font-size: 30px;
+.Test{
+    background: darkblue;
+    font-family: "Andale Mono";
+
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #001e44;
-  color: white;
-  text-align: center;
+.Test2{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+.header{
+
 }
 
+.footer{
 
+
+}
+
+.logo{
+    width:125px ;
+
+}
 
