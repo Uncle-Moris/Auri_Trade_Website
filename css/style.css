@@ -9,11 +9,13 @@
     top: 150px;
 }
 .header{
-
+    width: initial;
+    height: 125px;
+    background: blanchedalmond;
 }
 
 .footer{
-
+    width: initial;
 
 }
 
