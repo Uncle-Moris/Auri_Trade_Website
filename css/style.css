@@ -1,26 +1,40 @@
-.Test{
-    background: darkblue;
-    font-family: "Andale Mono";
 
-}
-.Test2{
-    position: absolute;
-    left: 100px;
-    top: 150px;
-}
 .header{
-    width: initial;
-    height: 125px;
-    background: blanchedalmond;
+    background-color: #001e44 ;
+    color: rgba(218, 200, 141) ;
+    width: 100%;
+    height: 150px;
 }
 
+.content {
+    background-color: antiquewhite ;
+    width: 100%;
+    height: 720px;
+    color: rgba(218, 200, 131);
+}
 .footer{
-    width: initial;
-
+    background-color: #001e44 ;
+    color: rgba(218, 200, 141) ;
+    width: 100%;
+    height: 150px;
+    bottom: auto;
+}
+.button_of{
+    background-color: #001e44 ;
+    color: rgba(218, 200, 141) ;
+    width: 26%;
+    height: 100%;
+    text-align: center;
+    font-size: 200%;
+    font-family: Sathu;
+}
+.button_of:hover{
+    background-color:rgba(218, 200, 141) ;
+    color: #001e44;
 }
 
 .logo{
-    width:125px ;
-
+    height: 100%;
+    width: ;
 }
 
