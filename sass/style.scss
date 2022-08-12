@@ -1,0 +1,54 @@
+/*
+ sass style.scss:css/style.css -w
+*/
+@use './colors' as colors ;
+@use './animations' as animations;
+@use './reset' as reset;
+
+.content {
+  background-color: antiquewhite ;
+  width: 100%;
+  height: 720px;
+  color: rgba(218, 200, 131);
+}
+.footer{
+  background-color: #001e44 ;
+  color: rgba(218, 200, 141) ;
+  width: 100%;
+  height: 150px;
+  bottom: auto;
+}
+
+.button_of{
+  background-color: #001e44 ;
+  color: rgba(218, 200, 141) ;
+  width: 29%;
+  height: 100%;
+  text-align: center;
+  font-size: 200%;
+  font-family:"Times New Roman";
+}
+.button_of:hover{
+  background-color:rgba(218, 200, 141) ;
+  color: #001e44;
+}
+
+.logo{
+  height: 90%;
+  width: auto;
+}
+
+.contact_info{
+  position: center;
+  font-family: "Times New Roman";
+}
+
+.header{
+  background-color: #001e44 ;
+  color: colors.$them-gold;
+  width: 100%;
+  height: 100px;
+}
+.albert {
+  color: #001e44;
+}
