@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: mediumaquamarine;
 }
 
 /*
@@ -49,6 +48,7 @@
   font-family: "Times New Roman";
 }
 
+/* Header */
 .header {
   background-color: #001e44;
   color: rgb(214, 199, 150);
@@ -56,8 +56,33 @@
   height: 100px;
 }
 
-.albert {
-  color: #001e44;
+.header-img {
+  position: relative;
+  height: 270px;
+  background-image: url("/Auri_Trade_Website/imgs/busan-night-scene-ga83b69581_1920.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+  border: rgba(234, 229, 238, 0.54) 2px solid;
 }
+
+.header-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(2, 26, 58, 0.36);
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  color: wheat;
+  z-index: 100;
+}
+
+/* */
 
 /*# sourceMappingURL=style.css.map */
