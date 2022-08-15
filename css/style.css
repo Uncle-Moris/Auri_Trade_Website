@@ -40,8 +40,7 @@
 }
 
 .logo {
-  height: 90%;
-  width: auto;
+  height: 100px;
 }
 
 .contact_info {
@@ -50,13 +49,6 @@
 }
 
 /* Header */
-.header {
-  background-color: #001e44;
-  color: rgb(214, 199, 150);
-  width: 100%;
-  height: 100px;
-}
-
 .header-img {
   position: relative;
   height: 270px;
@@ -84,6 +76,19 @@
   z-index: 100;
 }
 
-/* */
+/* Navigation */
+.nav-bar {
+  width: auto;
+  background-color: #001e44;
+}
+
+.nav {
+  display: inline-block;
+  background-color: #001e44;
+  color: rgb(214, 199, 150);
+  text-shadow: #001e44;
+  width: 100vh;
+  height: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */

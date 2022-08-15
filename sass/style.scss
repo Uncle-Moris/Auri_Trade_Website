@@ -34,8 +34,7 @@
 }
 
 .logo{
-  height: 90%;
-  width: auto;
+  height: 100px;
 }
 
 .contact_info{
@@ -43,12 +42,7 @@
   font-family: "Times New Roman";
 }
 /* Header */
-.header{
-  background-color: #001e44 ;
-  color: colors.$them-gold;
-  width: 100%;
-  height: 100px;
-}
+
 .header-img{
   position: relative;
   height: 270px;
@@ -75,4 +69,17 @@
   color: wheat;
   z-index: 100;
 }
-/* */
+/* Navigation */
+.nav-bar {
+  width: auto;
+  background-color: colors.$them-blue ;
+}
+
+.nav {
+  display: inline-block ;
+  background-color: colors.$them-blue ;
+  color: colors.$them-gold;
+  text-shadow: colors.$them-blue;
+  width: 100vh;
+  height: 100px;
+}
