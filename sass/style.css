@@ -97,6 +97,11 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
 }
 
 /* consulting */
+/* contact*/
+.contact {
+  background-color: #001e44;
+}
+
 /* footer */
 footer {
   background-color: #001e44;
