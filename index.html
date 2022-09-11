@@ -20,21 +20,21 @@
     <title>Auri Trade</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg color-blue fixed-top py-2">
+<nav class="navbar navbar-expand-lg fixed-top py-2">
     <div class="container">
         <a class="navbar-brand text-center" href="#home">
             <i class="bi bi-bar-chart mb-0"></i><p >Auri Trade</p></a>
-        <button class="navbar-toggler color-gold p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 
-            <i class="bi bi-list color-gold"></i>
+            <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto ">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#">Produkty inwestycyjne</a>
-                <a class="nav-link" href="#">Nieruchomści</a>
-                <a class="nav-link" href="#">Usługi doradcze</a>
-                <a class="nav-link" href="#">Kontakt</a>
+                <!-- <a class="nav-link" href="#home">Home</a> -->
+                <a class="nav-link" href="#investments">Produkty inwestycyjne</a>
+                <!-- <a class="nav-link" href="#">Nieruchomści</a> -->
+                <a class="nav-link" href="#consulting">Usługi doradcze</a>
+                <a class="nav-link" href="#contact">Kontakt</a>
             </div>
         </div>
     </div>
@@ -53,23 +53,128 @@
             <div class="home-shadow"></div>
         </div>
     </section>
-<!--
-<section id="home" class="home">
-    <div class="container h-100 d-flex flex-column justify-content-center
-        align-items-center text-light text-center">
+<main>
+    <section id="investments" class="investments">
+            <div class="container text-center p-5">
+                <h2 class="display-4 py-5">Produkty inwestycyjne</h2>
+                <div class="underline my-4"></div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 py-3">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/panele.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">Farmy fotowoltaiczne</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer"><a href=""></a></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/rooms/arche-scaled.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">Pokoje hotelowe</p>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/panele_na_budynku.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">Mini elektrownie słoneczne</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
 
-        <div class="align-items-center p-5">
-            <p class="home-text p-5">Łączymy ludzi z pasją prowadzących własny biznes <br>
-            z inwestorami poszukującymi bezpiecznych <br>
-            i rentownych inwestycji</p></div>
-
-    </div>
-    <div class="home-shadow"></div>
-</section>
--->
 
 
+            </div>
+    </section>
+
+
+    <section id="consulting" class="consulting">
+        <div class="container text-center p-5">
+            <h2 class="display-4 py-1">Usługi doradcze</h2>
+            <div class="underline my-4"></div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/rooms/arche-scaled.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/rooms/arche-scaled.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/rooms/arche-scaled.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact bg-dark text-light py-5">
+        <div class="container text-center py-5">
+            <p class="display-3 pb-lg-5 text-uppercase">Napisz do nas!</p>
+
+            <div class="row">
+                <div class="col-lg-9 my-5 m-lg-0">
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control"
+                                   placeholder="Imię i nazwisko">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control"
+                                   placeholder="Adres mailowy">
+                        </div>
+                        <div class="input-group mb-3">
+                                <textarea rows="6" class="form-control"
+                                          placeholder="Treść wiadomości"></textarea>
+                        </div>
+                        <input type="submit" value="Wyślij" class="btn btn-light px-4 py-2 submit-btn">
+                    </form>
+                </div>
+                <div class="col-lg-3 mt-4 m-lg-0 contact-info">
+                    <h3>Adres:</h3>
+                    <p class="orange-color">MNX Studio</p>
+                    <p><i class="bi bi-geo-alt orange-color"></i> ul. Goofiego 15 <br> 00-000 Warszawa</p>
+                    <p><i class="bi bi-phone orange-color"></i>+48 123-456-789</p>
+                    <p><i class="bi bi-at orange-color"></i> demo@demo.pl</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 <footer class="py-4">
     <p class="text-center">&copy; Auri Trade 2022</p>
 </footer>

@@ -21,7 +21,19 @@ body {
   font-size: 1.6rem;
 }
 
+.underline {
+  margin: auto;
+  width: 76px;
+  height: 28px;
+  background-color: rgb(214, 199, 150);
+  border: solid 1px #001e44;
+  box-shadow: 1px 2px #001e44;
+}
+
 /* navigation */
+nav {
+  background-color: #001e44;
+}
 nav .navbar-collapse {
   text-transform: uppercase;
 }
@@ -34,19 +46,10 @@ nav .nav-link:hover, nav .navbar-brand:hover {
 nav .bi-bar-chart {
   font-size: 38px;
 }
-nav .navbar-brand, nav .navbar-nav, nav .nav-link {
+nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
   color: rgb(214, 199, 150);
 }
 
-.color-blue {
-  background-color: #001e44;
-}
-
-.color-gold {
-  color: rgb(214, 199, 150);
-}
-
-/* navigation */
 /* home | welcome */
 .home {
   position: relative;
@@ -80,6 +83,20 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link {
   color: rgb(214, 199, 150);
 }
 
+/* investments */
+.investments .card .card-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.investments .card .card-img-top {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  background-size: auto;
+  background-position: center;
+}
+
+/* consulting */
 /* footer */
 footer {
   background-color: #001e44;

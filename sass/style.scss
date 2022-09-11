@@ -21,10 +21,19 @@ body{
   font-size:1.6rem;
 }
 
+.underline {
+  margin: auto;
+  width: 76px;
+  height: 28px;
+  background-color: colors.$them-gold;
+  border: solid 1px colors.$them-blue;
+  box-shadow: 1px 2px colors.$them-blue;
 
+}
 
 /* navigation */
 nav{
+  background-color: colors.$them-blue;
 
   .navbar-collapse{
     text-transform: uppercase;
@@ -41,25 +50,9 @@ nav{
   .bi-bar-chart{
     font-size: 38px;
   }
-  .navbar-brand, .navbar-nav, .nav-link{
+  .navbar-brand, .navbar-nav, .nav-link, .navbar-toggler{
     color: colors.$them-gold;
   }
-
-}
-
-
-
-.color-blue {
-  background-color: colors.$them-blue;
-
-}
-.color-gold{
-  color: colors.$them-gold;
-}
-
-/* navigation */
-nav{
-
 }
 
 /* home | welcome */
@@ -97,6 +90,33 @@ nav{
     }
   }
 }
+
+/* investments */
+
+.investments{
+  .card{
+    .card-title{
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .card-img-top{
+
+      height: 50%;
+      width: 100%;
+      object-fit: cover;
+      background-size: auto;
+      background-position: center ;
+    }
+  }
+
+}
+/* consulting */
+.consulting{
+
+}
+
+
+
 
 /* footer */
 footer{
