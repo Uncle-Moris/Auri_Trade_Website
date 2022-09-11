@@ -1,85 +1,107 @@
 /*
  sass style.scss:css/style.css -w
 */
-@use './colors' as colors ;
-@use './animations' as animations;
-@use './reset' as reset;
+@use "colors" as colors;
 
-.content {
-  background-color: antiquewhite ;
-  width: 100%;
-  height: 720px;
-  color: rgba(218, 200, 131);
-}
-.footer{
-  background-color: #001e44 ;
-  color: rgba(218, 200, 141) ;
-  width: 100%;
-  height: 150px;
-  bottom: auto;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.button_of{
-  background-color: #001e44 ;
-  color: rgba(218, 200, 141) ;
-  width: 29%;
-  height: 100%;
-  text-align: center;
-  font-size: 200%;
-  font-family:"Times New Roman";
-}
-.button_of:hover{
-  background-color:rgba(218, 200, 141) ;
-  color: #001e44;
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-.logo{
-  height: 100px;
-}
-
-.contact_info{
-  position: center;
-  font-family: "Times New Roman";
-}
-/* Header */
-
-.header-img{
+body{
   position: relative;
-  height: 270px;
-  background-image: url("/Auri_Trade_Website/imgs/busan-night-scene-ga83b69581_1920.jpg");
-  background-size: cover;
-  background-position:0 50%;
-  border: rgba(234, 229, 238, 0.54) 2px solid;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.6rem;
 }
 
-.header-bg{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  background-color: rgba(2,26,58, 0.36)
+
+
+/* navigation */
+nav{
+
+  .navbar-collapse{
+    text-transform: uppercase;
+  }
+
+  .navbar-toggler{
+    font-size: 26px;
+  }
+
+  .nav-link:hover, .navbar-brand:hover{
+    color: colors.$them-white;
+  }
+
+  .bi-bar-chart{
+    font-size: 38px;
+  }
+  .navbar-brand, .navbar-nav, .nav-link{
+    color: colors.$them-gold;
+  }
+
 }
 
-.header-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-weight:bold ;
-  transform: translate(-50%, -50%);
-  color: wheat;
-  z-index: 100;
-}
-/* Navigation */
-.nav-bar {
-  width: auto;
-  background-color: colors.$them-blue ;
-}
 
-.nav {
-  display: inline-block ;
-  background-color: colors.$them-blue ;
+
+.color-blue {
+  background-color: colors.$them-blue;
+
+}
+.color-gold{
   color: colors.$them-gold;
-  text-shadow: colors.$them-blue;
-  width: 100vh;
-  height: 100px;
+}
+
+/* navigation */
+nav{
+
+}
+
+/* home | welcome */
+.home {
+  position: relative;
+  height: 60rem;
+  background-image: url('../img/bridge_blue.jpg');
+  background-size: cover;
+  background-position: center ;
+  z-index: 0;
+  .home-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: colors.$shadow-them;
+    z-index: -1;
+  }
+  .home-text {
+
+    font-weight: bold;
+    color: colors.$them-gold;
+    text-shadow: 2px 2px colors.$black;
+    z-index: 1;
+
+    h2 {
+      font-size: 2.8rem;
+      color: colors.$them-gold;
+    }
+    p{
+      font-size: 1.8rem;
+      color: colors.$them-gold;
+
+    }
+  }
+}
+
+/* footer */
+footer{
+  background-color: colors.$them-blue;
+  p{
+    color: colors.$them-gold;
+  }
 }
