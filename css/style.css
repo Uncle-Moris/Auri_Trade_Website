@@ -97,9 +97,25 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
 }
 
 /* consulting */
+.consulting .card .card-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.consulting .card .card-img-top {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  background-size: auto;
+  background-position: center;
+}
+
 /* contact*/
 .contact {
   background-color: #001e44;
+  color: rgb(214, 199, 150);
+}
+.contact .contact-info {
+  color: rgb(214, 199, 150);
 }
 
 /* footer */
@@ -108,6 +124,9 @@ footer {
 }
 footer p {
   color: rgb(214, 199, 150);
+}
+footer .submit-btn {
+  font-size: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

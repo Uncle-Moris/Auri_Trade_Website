@@ -112,12 +112,29 @@ nav{
 }
 /* consulting */
 .consulting{
+  .card{
+    .card-title{
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .card-img-top{
+      height: 50%;
+      width: 100%;
+      object-fit: cover;
+      background-size: auto;
+      background-position: center ;
+    }
+  }
 
 }
 
 /* contact*/
 .contact{
   background-color: colors.$them-blue;
+  color: colors.$them-gold;
+  .contact-info{
+    color: colors.$them-gold;
+  }
 }
 
 
@@ -126,5 +143,8 @@ footer{
   background-color: colors.$them-blue;
   p{
     color: colors.$them-gold;
+  }
+  .submit-btn {
+    font-size: 6rem;
   }
 }
