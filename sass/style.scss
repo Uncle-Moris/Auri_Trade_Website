@@ -112,12 +112,19 @@ nav{
 }
 /* consulting */
 .consulting{
-
+  .bi {
+    color: colors.$them-gold;
+    font-size: 2.3rem;
+  }
 }
 
 /* contact*/
 .contact{
   background-color: colors.$them-blue;
+  color: colors.$them-gold;
+  .contact-info{
+    color: colors.$them-gold;
+  }
 }
 
 
@@ -127,4 +134,14 @@ footer{
   p{
     color: colors.$them-gold;
   }
+  .submit-btn {
+    font-size: 6rem;
+  }
+}
+
+/* media queries*/
+
+@media (width: 768px) {
+
+  
 }
