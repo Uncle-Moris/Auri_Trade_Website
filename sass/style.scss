@@ -31,6 +31,19 @@ body{
 
 }
 
+.g-bar::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 10%;
+  height: 20%;
+  background-color: colors.$them-gold;
+  box-shadow: 2px 2px colors.$them-blue;
+  border: solid 1px colors.$them-blue;
+}
+
 /* navigation */
 nav{
   background-color: colors.$them-blue;
@@ -94,13 +107,13 @@ nav{
 /* investments */
 
 .investments{
+
   .card{
     .card-title{
       font-weight: bold;
       font-size: 2rem;
     }
     .card-img-top{
-
       height: 50%;
       width: 100%;
       object-fit: cover;
