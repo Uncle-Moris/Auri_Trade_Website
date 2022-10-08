@@ -4,26 +4,36 @@
 /*
  sass style.scss:css/style.css -w
 */
-.underline {
-  margin: auto;
-  width: 76px;
-  height: 28px;
-  background-color: rgb(214, 199, 150);
-  border: solid 1px #001e44;
-  box-shadow: 1px 2px #001e44;
+/* Them colors */
+/* Shadow colors */
+/* Colors */
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.g-bar::after {
-  content: "";
+.underline-l {
   position: absolute;
-  bottom: 3px;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  width: 10%;
-  height: 20%;
+  width: 45%;
+  height: 0.4rem;
   background-color: rgb(214, 199, 150);
-  box-shadow: 2px 2px #001e44;
-  border: solid 1px #001e44;
+  bottom: 0;
+  left: -30px;
+  transform: skew(-5deg);
+  margin-bottom: 15px;
+}
+.underline-r {
+  position: absolute;
+  width: 45%;
+  height: 0.4rem;
+  background-color: rgb(214, 199, 150);
+  top: 0;
+  right: -30px;
+  transform: skew(5deg);
+  margin-top: 15px;
 }
 
 /* navigation */
@@ -46,21 +56,22 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
   color: rgb(214, 199, 150);
 }
 
-/* home | welcome */
-.home {
+/* header */
+.header {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 75vh;
+  margin-top: 129px;
   background-image: url("../img/bridge_blue.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
   z-index: 0;
 }
-.home .home-shadow {
+.header__shadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -69,22 +80,26 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
   background-color: rgba(6, 10, 17, 0.6);
   z-index: -1;
 }
-.home .home-text {
+.header__text {
   font-weight: bold;
   color: rgb(214, 199, 150);
   text-shadow: 2px 2px rgb(0, 0, 0);
+  font-size: 1.6rem;
+  color: rgb(214, 199, 150);
   z-index: 1;
 }
-.home .home-text h1 {
+.header__heading {
   font-size: 4.8rem;
-  color: rgb(214, 199, 150);
-}
-.home .home-text p {
-  font-size: 1.6rem;
+  font-weight: 300;
   color: rgb(214, 199, 150);
 }
 
 /* investments */
+.investments {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .investments .card .card-title {
   font-weight: bold;
   font-size: 2rem;
@@ -98,6 +113,11 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
 }
 
 /* consulting */
+.consulting {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .consulting .bi {
   color: rgb(214, 199, 150);
   font-size: 2.3rem;
@@ -105,6 +125,9 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
 
 /* contact*/
 .contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-color: #001e44;
   color: rgb(214, 199, 150);
 }
@@ -113,13 +136,13 @@ nav .navbar-brand, nav .navbar-nav, nav .nav-link, nav .navbar-toggler {
 }
 
 /* footer */
-footer {
+.footer {
   background-color: #001e44;
 }
-footer p {
+.footer p {
   color: rgb(214, 199, 150);
 }
-footer .submit-btn {
+.footer .submit-btn {
   font-size: 6rem;
 }
 

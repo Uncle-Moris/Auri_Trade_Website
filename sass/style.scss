@@ -3,31 +3,9 @@
 */
 @use "colors" as colors;
 @use "mixins" as mix;
+@import "components";
 
 
-
-.underline {
-  margin: auto;
-  width: 76px;
-  height: 28px;
-  background-color: colors.$them-gold;
-  border: solid 1px colors.$them-blue;
-  box-shadow: 1px 2px colors.$them-blue;
-
-}
-
-.g-bar::after {
-  content: '';
-  position: absolute;
-  bottom: 3px;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  width: 10%;
-  height: 20%;
-  background-color: colors.$them-gold;
-  box-shadow: 2px 2px colors.$them-blue;
-  border: solid 1px colors.$them-blue;
-}
 
 /* navigation */
 nav{
@@ -53,19 +31,20 @@ nav{
   }
 }
 
-/* home | welcome */
-.home {
+/* header */
+.header {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 75vh;
+  margin-top: 129px;
   @include mix.heroImg('../img/bridge_blue.jpg');
   background-attachment: scroll;
   z-index: 0;
 
-  .home-shadow{
+  &__shadow{
     position: absolute;
     top: 0;
     left: 0;
@@ -75,29 +54,26 @@ nav{
     z-index: -1;
   }
 
-  .home-text {
+  &__text {
     font-weight: bold;
     color: colors.$them-gold;
     text-shadow: 2px 2px colors.$black;
+    font-size: 1.6rem;
+    color: colors.$them-gold;
     z-index: 1;
+  }
 
-    h1 {
-      font-size: 4.8rem;
-      color: colors.$them-gold;
-    }
-
-    p{
-      font-size: 1.6rem;
-      color: colors.$them-gold;
-
-    }
+  &__heading {
+    @include mix.baseHeading;
+    color: colors.$them-gold;
   }
 }
 
 /* investments */
-
-.investments{
-
+.investments {
+  position: relative;
+  width: 100%;
+  height: 100%;
   .card{
     .card-title{
       font-weight: bold;
@@ -113,26 +89,30 @@ nav{
   }
 
 }
+
 /* consulting */
 .consulting{
+  position: relative;
+  width: 100%;
+  height: 100%;
   .bi {
     color: colors.$them-gold;
     font-size: 2.3rem;
   }
 }
-
 /* contact*/
 .contact{
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-color: colors.$them-blue;
   color: colors.$them-gold;
   .contact-info{
     color: colors.$them-gold;
   }
 }
-
-
 /* footer */
-footer{
+.footer {
   background-color: colors.$them-blue;
   p{
     color: colors.$them-gold;
@@ -141,10 +121,6 @@ footer{
     font-size: 6rem;
   }
 }
-
 /* media queries*/
-
 @media (width: 768px) {
-
-  
 }
