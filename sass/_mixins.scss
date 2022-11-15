@@ -2,9 +2,11 @@
   background-image: url($imgPath);
   background-size: cover;
   background-position: center ;
+
 }
 
 @mixin baseHeading {
   font-size: 4.8rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: 'Cinzel', serif;
 }
