@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/bootstrap-5.2.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,23 +15,27 @@
     <!-- Slick -->
 
     <!-- My styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 
-    <title>Auri Trade</title>
+    <title>Auri Trade - Strona Główna</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top py-2">
     <div class="container">
-        <a class="navbar-brand text-center ps-5" href="#header">
-            <i class="bi bi-bar-chart mb-0"></i><p >Auri Trade</p></a>
+<!--        <a class="navbar-brand text-center ps-5" href="#header">-->
+<!--            <i class="bi bi-bar-chart mb-0"></i><p >Auri Trade</p>-->
+<!--        </a>-->
+
+        <a class="navbar-brand " href="index.html">
+            <img src="dist/img/logo.jpg" alt="Logo" class="logo-at">
+        </a>
         <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 
             <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto pe-5">
-                <!-- <a class="nav-link" href="#home">Home</a> -->
-                <a class="nav__link" href="../GRID%20project/index.html">złoto</a>
+                 <a class="nav-link" href="#about">O nas</a>
                 <a class="nav-link" href="#investments">Produkty inwestycyjne</a>
                 <!-- <a class="nav-link" href="#">Nieruchomści</a> -->
                 <a class="nav-link" href="#consulting">Usługi doradcze</a>
@@ -50,41 +54,65 @@
         </div>
 </header>
 <main>
+    <section id="about" class="investments">
+
+        <div class="container text-center p-5">
+            <h2 class="display-4 py-5 position-relative g-bar">O nas</h2>
+            <div class="text-lg-center">
+                <p>
+                    Na runku jesteśmy od </p>
+            </div>
+
+        </div>
+    </section>
+
     <section id="investments" class="investments">
         <div class="underline-r"></div>
         <div class="underline-l"></div>
             <div class="container text-center p-5">
-                <h2 class="display-4 py-5 position-relative g-bar">Produkty inwestycyjne</h2>
+                <h2 class="display-4 py-5 position-relative g-bar">Produkty</h2>
+
+
                 <div class="row row-cols-1 row-cols-md-3 g-4 py-3">
+
+
                     <div class="col">
                         <div class="card h-100">
-                            <img src="./img/panele.jpeg" class="card-img-top" alt="...">
+                            <img src="../dist/img/panele.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-title">Farmy fotowoltaiczne</p>
+                                <p class="card-title">Developing Farm Fotovoltaicznych</p>
                                 <p class="card-text">We współpracy z naszymi pratnerami przygotowaliśmy dla państwa atrakcyjną ofertę inwestycji w farmy fotowoltaiczne</p>
+                                <a href="#" class="btn btn-primary">Sprawdź</a>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="col">
                         <div class="card h-100">
-                            <img src="./img/rooms/arche-scaled.jpeg" class="card-img-top" alt="...">
+                            <img src="../dist/img/arche-scaled.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-title">Pokoje hotelowe</p>
+                                <p class="card-title">Nieruchomości</p>
                                 <p class="card-text">Inwestycja w pokoje hotelowe to stabilny produkt rentierski</p>
+                                <a href="../properties.html" class="btn btn-primary">Sprawdź</a>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="col">
                         <div class="card h-100">
-                            <img src="./img/panele_na_budynku.jpeg" class="card-img-top" alt="...">
+                            <img src="../dist/img/panele_na_budynku.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-title">Mini elektrownie słoneczne</p>
                                 <p class="card-text">Dzięki inwestycji w mini elektrownie na możesz znacznie zmniejszyć koszta enerki elektrycznej w
                                 <strong>twoim przedsiębiorstie </strong></p>
+                                <a href="#" class="btn btn-primary">Sprawdź</a>
                             </div>
-
                         </div>
                     </div>
+
+
                 </div>
             </div>
     </section>
@@ -154,27 +182,22 @@
                     <p><i class="bi bi-geo-alt orange-color"></i>ul. Domaniewska 17/19 lok 133 <br>02-672 Warszawa</p>
                     <p><i class="bi bi-phone orange-color"></i>+48 123-456-789</p>
                     <p><i class="bi bi-at orange-color"></i> demo@demo.pl</p>
-
-                <!-- Auri Trade
-AURI TRADE sp. z o.o
- ul. Domaniewska 17/19 lok 133
-Nip: 5213903645 Regon : 386660697 KRS : 0000856474-->
                 </div>
             </div>
         </div>
     </section>
 </main>
 <footer class="py-0 footer">
-    <p class="text-center py-2">&copy; Auri Trade 2022</p>
+    <p class="text-center py-2">&copy; Auri Trade 2023</p>
 </footer>
 
 <!-- Bootstrap -->
-    <script src="bootstrap-5.2.1-dist/js/bootstrap.js"></script>
+    <script src="dist/bootstrap-5.2.1-dist/js/bootstrap.js"></script>
 <!-- Slick -->
 
 <!-- JQuery -->
 
 <!-- My scripts -->
-    <script src="js/script.js"></script>
+    <script src="dist/js/script.js"></script>
 </body>
 </html>
